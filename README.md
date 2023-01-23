@@ -20,9 +20,21 @@ Minishell is a 42 school team project write in C language. It implements redirec
 
 ## External functs.
 | function | Description |
-|-						|-		 |
-|`access` 				| check access (used in pipex)
-
+|-							|-		 |
+|`memset`					| ToDo
+|`printf`					| ToDo
+|`malloc`					| ToDo
+|`free`						| ToDo
+|`write`					| ToDo
+|`usleep`					| ToDo
+|`gettimeofday`				| ToDo
+|`pthread_create`			| ToDo
+|`pthread_detach`			| ToDo
+|`pthread_join`				| ToDo
+|`pthread_mutex_init`		| ToDo
+|`pthread_mutex_destroy`	| ToDo
+|`pthread_mutex_lock`		| ToDo
+|`pthread_mutex_unlock`		| ToDo
 
 
 
