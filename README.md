@@ -59,3 +59,5 @@ $ gcc -S main.c
 [Deadlock C?](https://youtu.be/LjWug2tvSBU)
 
 [Semaphores?](https://youtu.be/YSn8_XdGH7c)
+
+[Dining philosophers problem](https://youtu.be/FYUi-u7UWgw)
