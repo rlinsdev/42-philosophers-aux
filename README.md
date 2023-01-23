@@ -1,24 +1,26 @@
 
 <div align="center">
 
-<!--  -->
+<p align="center">
+	<img src="https://i2.wp.com/www.aponia-dental-center.com/fachzahnarztliche-praxis/wp-content/uploads/2014/01/work-in-progress.png?fit=286%2C253" alt="Working Progress">
+</p>
 
 </div>
 
 <!-- <p align="center"><img src="https://miro.medium.com/max/450/1*ZE2T9JllKfTOQ90oDwqGmQ.png" alt="Bash 1"> </p> -->
-<p align="center"><img src="https://game.42sp.org.br/static/assets/achievements/minishellm.png" alt="Minishell"> </p>
+<!-- <p align="center"><img src="https://game.42sp.org.br/static/assets/achievements/minishellm.png" alt="Minishell"> </p> -->
 
 
-# MiniShell
-Minishell is a 42 school team project write in C language. It implements redirections, pipes, environment variable, expansions, builtin commands, etc.
+# Philosophers
+TODO
 
 
 
 ## Definitions
-* One line definition: A shell is an interface that allows you to interact with the kernel of an operating system.
+* Mutex:
 
 
-## External functs.
+## External functions.
 | function | Description |
 |-							|-		 |
 |`memset`					| ToDo
@@ -27,14 +29,14 @@ Minishell is a 42 school team project write in C language. It implements redirec
 |`free`						| ToDo
 |`write`					| ToDo
 |`usleep`					| ToDo
-|`gettimeofday`				| ToDo
-|`pthread_create`			| ToDo
-|`pthread_detach`			| ToDo
-|`pthread_join`				| ToDo
-|`pthread_mutex_init`		| ToDo
-|`pthread_mutex_destroy`	| ToDo
-|`pthread_mutex_lock`		| ToDo
-|`pthread_mutex_unlock`		| ToDo
+|`gettimeofday`				| sys/time.h - get / set time
+|`pthread_create`			| pthread.h - Thread creation
+|`pthread_detach`			| pthread.h - When a detached thread terminates, its resources are automatically released back to the system
+|`pthread_join`				| pthread.h - function waits for the thread specified by thread to terminate
+|`pthread_mutex_init`		| pthread.h - destroy and initialize a mutex
+|`pthread_mutex_destroy`	| pthread.h - destroy and initialize a mutex
+|`pthread_mutex_lock`		| pthread.h - lock and unlock a mutex
+|`pthread_mutex_unlock`		| pthread.h - lock and unlock a mutex
 
 
 
