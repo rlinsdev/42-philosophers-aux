@@ -7,9 +7,6 @@
 
 </div>
 
-<!-- <p align="center"><img src="https://miro.medium.com/max/450/1*ZE2T9JllKfTOQ90oDwqGmQ.png" alt="Bash 1"> </p> -->
-<!-- <p align="center"><img src="https://game.42sp.org.br/static/assets/achievements/minishellm.png" alt="Minishell"> </p> -->
-
 
 # Philosophers
 TODO
@@ -44,6 +41,7 @@ TODO
 ```Shell
 #Generate code in Assembly code
 $ gcc -S main.c
+$ ./philo 5	86400000 3600000 28800000 2
 ```
 
 ## To Test:
@@ -61,3 +59,7 @@ $ gcc -S main.c
 [Semaphores?](https://youtu.be/YSn8_XdGH7c)
 
 [Dining philosophers problem](https://youtu.be/FYUi-u7UWgw)
+
+[Dining philosophers problem 2](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
+
+[Dining philosophers problem 2](https://www.ecb.torontomu.ca/~courses/coe518/Labs/lab4/lisi.edu-dining-Philosopherecture8.pdf)

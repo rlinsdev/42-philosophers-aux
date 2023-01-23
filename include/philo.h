@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:02:00 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 14:49:48 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 15:39:09 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,19 @@
 # define PHILO_H
 
 enum state {
-	eat,
-	think,
-	sleep
+	eating,
+	thinking,
+	sleeping,
+	hungry,
 };
 
 # include <stdio.h> // Printf
 # include <stdlib.h> // Malloc
 # include <pthread.h> //pthread_*
 # include <unistd.h> // Sleep
-# include <semaphore.h> //
+# include <semaphore.h> // semaphore
 # include <stdbool.h> //boolean
+# include <limits.h> // long_max
 
 /******************************************************************************/
 /*Begin - Initialization*/
@@ -42,9 +44,16 @@ int	deadlock();
 int	deadlock2();
 int	func_semaphore(void);
 void circle(void);
+int	ft_ato_long(const char *str, bool *error);
+
+//eat
+//release_forks
+//sleep
+//think
 
 /******************************************************************************/
 /*End - Initialization*/
 /******************************************************************************/
+
 
 #endif
