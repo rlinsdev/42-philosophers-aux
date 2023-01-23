@@ -54,9 +54,7 @@ $ gcc -S main.c
 [What are Race conditions?](https://www.youtube.com/watch?v=FY9livorrJI)
 
 [Mutex in C?](https://youtu.be/oq29KUy29iQ)
-<!-- * <a href="https://www.makeuseof.com/shell-builtin-commands-in-linux/">How to Identify a Shell Builtin Command</a>
-* <a href="https://www.youtube.com/playlist?list=PLucm8g_ezqNrYgjXC8_CgbvHbvI7dDfhs">Course - Shell script (BOSON - pt-br)</a>
-* <a href="https://www.youtube.com/playlist?list=PLFAC320731F539902">Unix terminals and shells</a>
-* <a href="https://www.guru99.com/compiler-design-lexical-analysis.html">Lexer</a> -->
 
+[Deadlock C?](https://youtu.be/LjWug2tvSBU)
 
+[Semaphores?](https://youtu.be/YSn8_XdGH7c)

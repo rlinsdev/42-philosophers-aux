@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:38:38 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 11:14:19 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 11:44:44 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	*routine() {
 	pthread_mutex_unlock(&mutex);
 }
 
-int	race_cond_1()
+int	race_cond()
 {
 	pthread_t p1, p2;
 	pthread_mutex_init(&mutex, NULL); // Initialize Mutex

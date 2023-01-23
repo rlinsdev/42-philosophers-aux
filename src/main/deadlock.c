@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 10:58:27 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 11:14:13 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 11:43:29 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,26 @@
 
 pthread_mutex_t mutexFuel;
 int fuel = 50;
+pthread_mutex_t mutexWater;
+int water = 10;
 
 static void	*routine(void *args) {
-	pthread_mutex_lock(&mutexFuel);
+	// CHANGE THE ORDER OF LOCK. THIS IS A PROBLEM
+	// if (rand() % 2 == 1) {
+	// 	pthread_mutex_lock(&mutexFuel);
+	// 	sleep(1);
+	// 	pthread_mutex_lock(&mutexWater);
+	// } else {
+		pthread_mutex_lock(&mutexWater);
+		// sleep(1);
+		pthread_mutex_lock(&mutexFuel);
+	// }
+
 	fuel += 50;
-	printf("Increment fuel to: %d\n", fuel);
+	water = fuel;
+	printf("Increment fuel to: %d and set water to: %d\n", fuel, water);
 	pthread_mutex_unlock(&mutexFuel);
+	pthread_mutex_unlock(&mutexWater);
 }
 
 int	deadlock()
@@ -29,6 +43,7 @@ int	deadlock()
 	pthread_t th[THREAD_NUMB];
 
 	pthread_mutex_init(&mutexFuel, NULL);
+	pthread_mutex_init(&mutexWater, NULL);
 	int i;
 	for (i = 0; i< THREAD_NUMB; i++) {
 		if (pthread_create(&th[i], NULL, &routine, NULL) != 0) {
@@ -43,6 +58,7 @@ int	deadlock()
 	}
 	printf("Fuel: %d\n", fuel);
 	pthread_mutex_destroy(&mutexFuel);
+	pthread_mutex_destroy(&mutexWater);
 
 	return (0);
 }
