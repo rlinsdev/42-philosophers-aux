@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:02:00 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 08:12:29 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 10:06:17 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdio.h> // Printf
 # include <stdlib.h> // Malloc
+# include <pthread.h> //pthread_
 
 /******************************************************************************/
 /*Begin - Initialization*/
@@ -27,6 +28,8 @@
  * @return int
  */
 int		init(int argc, char **argv, char **envp);
+
+int		race_cond_1();
 
 /******************************************************************************/
 /*End - Initialization*/

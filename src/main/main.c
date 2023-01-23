@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:04:02 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 09:17:30 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 10:07:03 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@
  */
 int	main(int argc, char **argv, char **envp)
 {
-	race_cond_1();
-	return (0);
+	int result = race_cond_1();
+	return (result);
 }
