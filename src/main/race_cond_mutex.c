@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   race_cond.c                                        :+:      :+:    :+:   */
+/*   race_cond_mutex.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:38:38 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 10:50:56 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 11:14:19 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int mails = 0;
 pthread_mutex_t mutex; // Create mutex
 
-void	*routine() {
+static void	*routine() {
 	// Lock the mutex
 	pthread_mutex_lock(&mutex);
 	for (int i = 0; i < 1000000; i++) { // Error
