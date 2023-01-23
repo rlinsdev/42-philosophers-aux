@@ -6,11 +6,11 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:38:38 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 11:44:44 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 17:41:37 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/philo.h"
+#include <philo.h>
 
 int mails = 0;
 pthread_mutex_t mutex; // Create mutex

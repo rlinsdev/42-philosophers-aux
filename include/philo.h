@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:02:00 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 15:39:09 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 17:51:52 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int	deadlock2();
 int	func_semaphore(void);
 void circle(void);
 int	ft_ato_long(const char *str, bool *error);
+int	comb1();
 
 //eat
 //release_forks

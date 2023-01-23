@@ -6,7 +6,7 @@
 #    By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/23 08:04:25 by rlins             #+#    #+#              #
-#    Updated: 2023/01/23 16:01:36 by rlins            ###   ########.fr        #
+#    Updated: 2023/01/23 17:51:22 by rlins            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ PATH_OBJS 		= ./objs/
 INC_PATH 		= ./include/
 
 # Compilation
-CC = gcc
+CC = gcc -pthread
 
 # Compilation flags
 CFLAGS = -g
@@ -48,6 +48,7 @@ SRCS =	$(PATH_MAIN)main.c \
 		$(PATH_MAIN)semaphores.c \
 		$(PATH_MAIN)circular.c \
 		$(PATH_UTIL)ft_ato_long.c \
+		$(PATH_MAIN)comb1.c \
 
 OBJS = $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(SRCS))
 
