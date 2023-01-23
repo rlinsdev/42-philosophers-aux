@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   race_cond_1.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/23 08:04:02 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 09:17:30 by rlins            ###   ########.fr       */
+/*   Created: 2023/01/23 08:38:38 by rlins             #+#    #+#             */
+/*   Updated: 2023/01/23 09:16:23 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <philo.h>
+#include <pthread.h>
 
-/**
- * @brief Main Class of program
- * @param argc Arguments Count
- * @param argv Arguments Vector
- * @param envp Environment variables
- * @return int
- */
-int	main(int argc, char **argv, char **envp)
+void	race_cond_1(void)
 {
-	race_cond_1();
-	return (0);
+	printf('opa');
 }
