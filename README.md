@@ -17,7 +17,7 @@ TODO
 
 
 ## Definitions
-* Mutex:
+* Mutex: Protect the execution again other threads running at the same time.
 
 
 ## External functions.

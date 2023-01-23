@@ -6,25 +6,30 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:38:38 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 10:42:34 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 10:50:56 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/philo.h"
-// #include "philo.h"
 
 int mails = 0;
+pthread_mutex_t mutex; // Create mutex
 
 void	*routine() {
-	// for (int i = 0; i < 1000000; i++) { // Error
-	for (int i = 0; i < 100; i++) { // OK
+	// Lock the mutex
+	pthread_mutex_lock(&mutex);
+	for (int i = 0; i < 1000000; i++) { // Error
+	// for (int i = 0; i < 100; i++) { // OK
 		mails++;
 	}
+	// Unlock mutex
+	pthread_mutex_unlock(&mutex);
 }
 
 int	race_cond_1()
 {
 	pthread_t p1, p2;
+	pthread_mutex_init(&mutex, NULL); // Initialize Mutex
 
 	if (pthread_create(&p1, NULL, &routine, NULL) != 0) {
 		return (1);
@@ -38,7 +43,8 @@ int	race_cond_1()
 	if (pthread_join(p2, NULL) != 0) {
 		return (4);
 	}
-	// printf("oi\n");
+
+	pthread_mutex_destroy(&mutex); //  Destroy - remove from memory
 	printf("Number of mails: %d\n", mails);
 	return (0);
 }

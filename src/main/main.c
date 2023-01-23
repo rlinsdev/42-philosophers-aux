@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:04:02 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 10:31:46 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 10:58:50 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
  */
 int	main(int argc, char **argv, char **envp)
 {
-	int result = race_cond_1();
+	// int result = race_cond_1();
+	int result = deadlock();
 	return (result);
 }
