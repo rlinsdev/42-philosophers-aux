@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:02:00 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 11:44:40 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 12:56:02 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include <stdio.h> // Printf
 # include <stdlib.h> // Malloc
 # include <pthread.h> //pthread_*
-#include <unistd.h> // Sleep
+# include <unistd.h> // Sleep
+# include <semaphore.h> //
 
 /******************************************************************************/
 /*Begin - Initialization*/
@@ -31,7 +32,8 @@
 int	init(int argc, char **argv, char **envp);
 int	race_cond();
 int	deadlock();
-int	semaphore();
+int	deadlock2();
+int	func_semaphore(void);
 
 /******************************************************************************/
 /*End - Initialization*/

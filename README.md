@@ -18,6 +18,7 @@ TODO
 
 ## Definitions
 * Mutex: Protect the execution again other threads running at the same time.
+* Semaphore: Some kind of mutex, but with counter
 
 
 ## External functions.

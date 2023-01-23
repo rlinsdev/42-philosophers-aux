@@ -6,7 +6,7 @@
 #    By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/23 08:04:25 by rlins             #+#    #+#              #
-#    Updated: 2023/01/23 10:58:08 by rlins            ###   ########.fr        #
+#    Updated: 2023/01/23 12:55:56 by rlins            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,7 @@ INCLUDE = -I $(INC_PATH)
 SRCS =	$(PATH_MAIN)main.c \
 		$(PATH_MAIN)race_cond_mutex.c \
 		$(PATH_MAIN)deadlock.c \
+		$(PATH_MAIN)semaphores.c \
 
 OBJS = $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(SRCS))
 
