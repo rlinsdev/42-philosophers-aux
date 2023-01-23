@@ -6,7 +6,7 @@
 #    By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/23 08:04:25 by rlins             #+#    #+#              #
-#    Updated: 2023/01/23 14:33:17 by rlins            ###   ########.fr        #
+#    Updated: 2023/01/23 16:01:36 by rlins            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ RED 	= \033[0;31m
 # Paths
 PATH_SRC 		= ./src/
 PATH_MAIN 		= $(PATH_SRC)main/
+PATH_UTIL 		= $(PATH_SRC)util/
 PATH_OBJS 		= ./objs/
 
 INC_PATH 		= ./include/
@@ -46,6 +47,7 @@ SRCS =	$(PATH_MAIN)main.c \
 		$(PATH_MAIN)deadlock.c \
 		$(PATH_MAIN)semaphores.c \
 		$(PATH_MAIN)circular.c \
+		$(PATH_UTIL)ft_ato_long.c \
 
 OBJS = $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(SRCS))
 
@@ -58,6 +60,7 @@ $(NAME): $(OBJS)
 $(PATH_OBJS)%.o: $(PATH_SRC)%.c
 	@mkdir -p $(PATH_OBJS)
 	@mkdir -p $(PATH_OBJS)main/
+	@mkdir -p $(PATH_OBJS)util/
 	@$(CC) $(CFLAGS) $(INCLUDE) -I. -c $< -o $@
 
 clean:
@@ -80,7 +83,7 @@ bonus: all
 rebonus: fclean all
 
 run:
-	make re && ./philo
+	make re && ./philo "5" "86400000" "3600000" "28800000" "2"
 
 valgrind:
 	$(LEAK) ./philo
