@@ -6,7 +6,7 @@
 #    By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/23 08:04:25 by rlins             #+#    #+#              #
-#    Updated: 2023/01/23 08:41:45 by rlins            ###   ########.fr        #
+#    Updated: 2023/01/23 10:44:00 by rlins            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ READ_LN		= -l readline
 INCLUDE = -I $(INC_PATH)
 
 SRCS =	$(PATH_MAIN)main.c \
-		$(PATH_MAIN)race_cond_1.c \
+		$(PATH_MAIN)race_cond.c \
 
 OBJS = $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(SRCS))
 

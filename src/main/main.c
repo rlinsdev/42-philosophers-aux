@@ -6,11 +6,12 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:04:02 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 10:07:03 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 10:31:46 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <philo.h>
+// #include <philo.h>
+#include "../../include/philo.h"
 
 /**
  * @brief Main Class of program

@@ -39,6 +39,12 @@ TODO
 |`pthread_mutex_unlock`		| pthread.h - lock and unlock a mutex
 
 
+## Commands:
+```Shell
+#Generate code in Assembly code
+$ gcc -S main.c
+```
+
 ## To Test:
 * Valgrind with race condition
 
@@ -46,6 +52,8 @@ TODO
 [Code Vault - Playlist](https://www.youtube.com/watch?v=d9s_d28yJq0&list=PLfqABt5AS4FmuQf70psXrsMLEDQXNkLq2)
 
 [What are Race conditions?](https://www.youtube.com/watch?v=FY9livorrJI)
+
+[Mutex in C?](https://youtu.be/oq29KUy29iQ)
 <!-- * <a href="https://www.makeuseof.com/shell-builtin-commands-in-linux/">How to Identify a Shell Builtin Command</a>
 * <a href="https://www.youtube.com/playlist?list=PLucm8g_ezqNrYgjXC8_CgbvHbvI7dDfhs">Course - Shell script (BOSON - pt-br)</a>
 * <a href="https://www.youtube.com/playlist?list=PLFAC320731F539902">Unix terminals and shells</a>
