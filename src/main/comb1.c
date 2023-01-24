@@ -6,13 +6,13 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 17:49:57 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 21:20:09 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/24 06:43:55 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <philo.h>
 
-#define TIMES_TO_COUNT 21000
+#define TIMES_TO_COUNT 210
 
 #define NC		"\e[0m"
 #define YELLOW	"\e[33m"

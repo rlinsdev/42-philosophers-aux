@@ -6,7 +6,7 @@
 #    By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/23 08:04:25 by rlins             #+#    #+#              #
-#    Updated: 2023/01/23 21:01:08 by rlins            ###   ########.fr        #
+#    Updated: 2023/01/24 06:49:44 by rlins            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,12 +29,16 @@ INC_PATH 		= ./include/
 CC = gcc -pthread
 
 # Compilation flags
-CFLAGS = -g -fsanitize=thread # -fsanitize=thread = Warning datarace
+# CFLAGS = -g -fsanitize=thread # -fsanitize=thread = Warning datarace. This don't work with valgrind
+CFLAGS = -g # -fsanitize=thread = Warning datarace
 # CFLAGS = -g -Wall -Werror -Wextra
 
 #Chedk Leak memory
-LEAK = valgrind --leak-check=full --show-leak-kinds=all \
+ LEAK = valgrind --leak-check=full --show-leak-kinds=all \
 	--trace-children=yes --track-origins=yes -s
+# Thread error detections:
+# LEAK = --tool=helgrind
+# LEAK = --tool=drd
 
 RM			= rm -rf
 NO_PRINT	= --no-print-directory
@@ -87,6 +91,6 @@ run:
 	make re && ./philo "5" "86400000" "3600000" "28800000" "2"
 
 valgrind:
-	$(LEAK) ./philo
+	$(LEAK) ./philo "5" "86400000" "3600000" "28800000" "2"
 
 .PHONY: all run re clean fclean
