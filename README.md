@@ -1,15 +1,15 @@
 
 <div align="center">
 
-<p align="center">
+<!-- <p align="center">
 	<img src="https://i2.wp.com/www.aponia-dental-center.com/fachzahnarztliche-praxis/wp-content/uploads/2014/01/work-in-progress.png?fit=286%2C253" alt="Working Progress">
-</p>
+</p> -->
 
 </div>
 
 
 # Philosophers
-TODO
+42 Project Aux tests and definitions
 
 
 
@@ -40,7 +40,7 @@ TODO
 
 ## Commands:
 ```Shell
-#Generate code in Assembly code
+#Generate code in machine language
 $ gcc -S main.c
 $ ./philo 5	86400000 3600000 28800000 2
 ```
