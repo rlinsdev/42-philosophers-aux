@@ -6,7 +6,7 @@
 #    By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/23 08:04:25 by rlins             #+#    #+#              #
-#    Updated: 2023/01/23 17:51:22 by rlins            ###   ########.fr        #
+#    Updated: 2023/01/23 21:01:08 by rlins            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ INC_PATH 		= ./include/
 CC = gcc -pthread
 
 # Compilation flags
-CFLAGS = -g
+CFLAGS = -g -fsanitize=thread # -fsanitize=thread = Warning datarace
 # CFLAGS = -g -Wall -Werror -Wextra
 
 #Chedk Leak memory

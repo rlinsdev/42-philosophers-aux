@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 08:02:00 by rlins             #+#    #+#             */
-/*   Updated: 2023/01/23 17:51:52 by rlins            ###   ########.fr       */
+/*   Updated: 2023/01/23 21:03:05 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ enum state {
 
 # include <stdio.h> // Printf
 # include <stdlib.h> // Malloc
-# include <pthread.h> //pthread_*
+# include <pthread.h> //pthread_*, mutex
 # include <unistd.h> // Sleep
 # include <semaphore.h> // semaphore
 # include <stdbool.h> //boolean

@@ -14,7 +14,8 @@ TODO
 
 
 ## Definitions
-* Mutex: Protect the execution again other threads running at the same time.
+* Data Races: Occur when multiple tasks or threads access a shared resource without sufficient protections
+* Mutex: MUTual EXclusion - Protect the execution again other threads running at the same time.
 * Semaphore: Some kind of mutex, but with counter
 
 
